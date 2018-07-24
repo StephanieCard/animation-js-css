@@ -6,41 +6,60 @@ button{
 .imagens{
     display: flex;
     align-content: space-between;
-    flex-direction: 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /*margin-top: 192px;*/
+} 
+
+body{
+    margin: 0px;
+    display: flex;
+}
+
+article{
+    background-color: #003affa1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -3;
 }
 
 #sonic{
-    transition-duration: 3s;
-    width: 100px;
-    height: 100px;
+    transition-duration: 5s;
+    width: 150px;
+    height: 150px;
 }
 
 .rings{
     right: 0;
     width: 80px;
     height: 80px;
-    margin: 0;
-    
+    margin: 0; 
+    animation: sumir 3s linear; 
+    animation-duration: 3s;  
 }
 
 .rings:nth-child(1){
-    transition-duration: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .rings:nth-child(2){
-    transition-duration: 1s;
+    animation-delay: 0.8s;
 }
 
 .rings:nth-child(3){
-    transition-duration: 1.5s;
+    animation-delay: 1s;
 }
 
 .rings:nth-child(4){
-    transition-duration: 2s;
+    animation-delay: 1.2s;
 }
 
 .rings:nth-child(5){
-    transition-duration: 2.5s;
+    animation-delay: 1.5s;
 }
 
 /* input, textarea{
@@ -61,3 +80,11 @@ button{
     border-radius: 10px;
     font-size: 16px; 
 } */
+
+@keyframes sumir{
+    10%{opacity: 0;};
+    50%{opacity: 0;};
+    70%{opacity: 0;};
+    95%{opacity: 0;};
+    100%{display: none;}
+}

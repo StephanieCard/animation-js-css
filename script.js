@@ -1,28 +1,46 @@
-let botao = document.querySelector('button');
+// let botao = document.querySelector('button');
 let article = document.querySelector('article');
 let sonic = document.querySelector('#sonic');
 let rings = document.querySelectorAll('.rings');
+let imagens = document.querySelector('.imagens');
 
-function mudarCorDeFundo(){
-    document.body.style.backgroundColor ='blue';
-}
+// function mudarCorDeFundo(){
+//     document.body.style.backgroundColor ='blue';
+// }
 
-function logar(){
-    console.log('oie');
-}
+// function logar(){
+//     console.log('oie');
+// }
 
 function sumir(){
-    rings.style.opacity = 0;
+   // for(let i = 0; i<=5;i++){
+   	// rings[i]= 
+   	
+
+   	for(rings in imagens){
+   		rings.style.opacity = 0;
+   	}
+   // }
+    // let i=0;
+   	// while(i<=rings.lenght){
+   	// 	rings.style.opacity = 0;
+   	// 	i++
+   	// }
+
 }
 
-botao.addEventListener('click', mudarCorDeFundo);
+
+
+// botao.addEventListener('click', mudarCorDeFundo);
 // botao.onclick = mudarCorDeFundo;       
-article.addEventListener('mouseover',logar);
+// article.addEventListener('mouseover',logar);
 
 function andar(){
-    sonic.style.transform= 'translateX(1000px)';
-    setTimeout(mudarCorDeFundo, 3500);
+    sonic.style.transform= 'translateX(800px)';
+    // setTimeout(mudarCorDeFundo, 3500);
+    setTimeout(sonic.style.opacity = 0);
     setTimeout(sumir, 0);
+    setTimeout($('.rings').hide());
 }
 
 sonic.addEventListener('click', andar);
