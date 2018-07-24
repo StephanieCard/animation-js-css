@@ -17,8 +17,8 @@ function sumir(){
    	// rings[i]= 
    	
 
-   	for(rings in imagens){
-   		rings.style.opacity = 0;
+   	for(let i in rings){
+   		rings[i].style.opacity = 0;
    	}
    // }
     // let i=0;
