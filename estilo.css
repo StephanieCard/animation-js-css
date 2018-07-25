@@ -51,10 +51,10 @@ article{
 }
 
 .rings:nth-child(5){
-    transition-duration: 2s;
+    transition-duration: 1.8s;
 }
 
 .rings:nth-child(6){
-    transition-duration: 2.4s;
+    transition-duration: 2.2s;
 }
 
