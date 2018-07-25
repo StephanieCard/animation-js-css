@@ -35,26 +35,26 @@ article{
 }
 
 .rings:nth-child(1){
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 }
 
 .rings:nth-child(2){
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
 }
 
 .rings:nth-child(3){
-    transition-duration: 1.2s;
+    transition-duration: 1s;
 }
 
 .rings:nth-child(4){
-    transition-duration: 1.5s;
+    transition-duration: 1.3s;
 }
 
 .rings:nth-child(5){
-    transition-duration: 1.8s;
+    transition-duration: 1.6s;
 }
 
 .rings:nth-child(6){
-    transition-duration: 2.2s;
+    transition-duration: 1.9s;
 }
 
